@@ -11,12 +11,16 @@ let [counter,setcounter] =useState(15)
 
 const addvalue=()=>{
   console.log("Clicked",counter);
-  if(counter<20)
-  {
-  counter=counter+1
-  }
-  setcounter(counter)
+  // if(counter<20)
+  // {
+  //   counter=counter+1
+  // }
+  setcounter(prevCounter=>prevCounter+1)
+  setcounter(prevCounter=>prevCounter+1)
+  setcounter(prevCounter=>prevCounter+1)
+  setcounter(prevCounter=>prevCounter+1)
 }
+
 const removevalue=()=>{
   if(counter>0)
   {
@@ -24,6 +28,7 @@ const removevalue=()=>{
   }
   
 }
+
   return (
     <>
        <h1>sumit Read series</h1>
